@@ -10,5 +10,6 @@ set expandtab shiftwidth=4 softtabstop=4
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/nerdtree'
+Plug 'itchyny/lightline.vim'
 call plug#end()
 map <C-n> :NERDTreeToggle<CR>
