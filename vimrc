@@ -6,3 +6,9 @@ set incsearch hlsearch
 set ignorecase smartcase
 set number relativenumber
 set expandtab shiftwidth=4 softtabstop=4
+
+call plug#begin('~/.vim/plugged')
+Plug 'tpope/vim-fugitive'
+Plug 'scrooloose/nerdtree'
+call plug#end()
+map <C-n> :NERDTreeToggle<CR>
