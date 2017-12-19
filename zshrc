@@ -7,3 +7,4 @@ alias ll='ls -lah'
 alias gs='git status'
 alias gd='git diff'
 alias gco='git checkout'
+export PATH="$HOME/bin:$PATH"
