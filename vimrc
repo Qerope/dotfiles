@@ -11,5 +11,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/nerdtree'
 Plug 'itchyny/lightline.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 call plug#end()
 map <C-n> :NERDTreeToggle<CR>
