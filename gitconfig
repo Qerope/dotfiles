@@ -3,3 +3,5 @@
 	email = preloopadm@gmail.com
 [core]
 	editor = vim
+[pull]
+	rebase = true
