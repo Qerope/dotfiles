@@ -8,3 +8,9 @@ alias gs='git status'
 alias gd='git diff'
 alias gco='git checkout'
 export PATH="$HOME/bin:$PATH"
+export NVM_DIR="$HOME/.nvm"
+nvm() {
+  unset -f nvm
+  . "$NVM_DIR/nvm.sh"
+  nvm "$@"
+}
