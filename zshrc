@@ -14,3 +14,4 @@ nvm() {
   . "$NVM_DIR/nvm.sh"
   nvm "$@"
 }
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
