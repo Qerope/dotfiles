@@ -5,3 +5,6 @@
 	editor = vim
 [pull]
 	rebase = true
+[alias]
+	lg = log --graph --pretty=format:'%h %s (%cr) <%an>'
+	st = status -sb
