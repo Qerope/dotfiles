@@ -8,3 +8,5 @@
 [alias]
 	lg = log --graph --pretty=format:'%h %s (%cr) <%an>'
 	st = status -sb
+[core]
+	pager = diff-so-fancy | less --tabs=4 -RFX
