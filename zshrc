@@ -1,7 +1,8 @@
 export PATH="$HOME/bin:/usr/local/bin:$PATH"
-export ZSH="$HOME/.oh-my-zsh"
-plugins=(git)
-source $ZSH/oh-my-zsh.sh
+source ~/.zplugin/bin/zplugin.zsh
+zplugin light zsh-users/zsh-autosuggestions
+zplugin light zdharma/fast-syntax-highlighting
+autoload -Uz compinit && compinit
 PROMPT='%F{blue}%~%f %# '
 alias ll='ls -lah'
 alias gs='git status'
