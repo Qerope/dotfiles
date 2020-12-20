@@ -8,7 +8,6 @@ alias ll='ls -lah'
 alias gs='git status'
 alias gd='git diff'
 alias gco='git checkout'
-export PATH="$HOME/bin:$PATH"
 export NVM_DIR="$HOME/.nvm"
 nvm() {
   unset -f nvm
@@ -27,3 +26,4 @@ HISTSIZE=50000
 SAVEHIST=50000
 setopt SHARE_HISTORY HIST_IGNORE_DUPS
 source <(kubectl completion zsh)
+eval "$(/opt/homebrew/bin/brew shellenv)"
