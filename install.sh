@@ -12,7 +12,6 @@ link() {
     ln -sfn "$src" "$dst"
 }
 
-link vimrc .vimrc
 link tmux.conf .tmux.conf
 link zshrc .zshrc
 link gitconfig .gitconfig
