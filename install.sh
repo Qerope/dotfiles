@@ -15,3 +15,4 @@ link() {
 link tmux.conf .tmux.conf
 link zshrc .zshrc
 link gitconfig .gitconfig
+link starship.toml .config/starship.toml

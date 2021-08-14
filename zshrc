@@ -3,7 +3,7 @@ source ~/.zplugin/bin/zplugin.zsh
 zplugin light zsh-users/zsh-autosuggestions
 zplugin light zdharma/fast-syntax-highlighting
 autoload -Uz compinit && compinit
-PROMPT='%F{blue}%~%f %# '
+eval "$(starship init zsh)"
 alias ll='ls -lah'
 alias gs='git status'
 alias gd='git diff'
