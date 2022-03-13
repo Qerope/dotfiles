@@ -27,3 +27,4 @@ SAVEHIST=50000
 setopt SHARE_HISTORY HIST_IGNORE_DUPS
 source <(kubectl completion zsh)
 eval "$(/opt/homebrew/bin/brew shellenv)"
+eval "$(zoxide init zsh)"
