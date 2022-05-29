@@ -1,0 +1,13 @@
+#!/bin/sh
+# pick a project directory with fzf and open (or switch to) a tmux session for it
+dir=$(find ~/Git ~/work -mindepth 1 -maxdepth 1 -type d 2>/dev/null | fzf)
+[ -z "$dir" ] && exit 0
+name=$(basename "$dir" | tr . _)
+if ! tmux has-session -t="$name" 2>/dev/null; then
+    tmux new-session -ds "$name" -c "$dir"
+fi
+if [ -n "$TMUX" ]; then
+    tmux switch-client -t "$name"
+else
+    tmux attach -t "$name"
+fi
