@@ -8,6 +8,8 @@ alias ll='ls -lah'
 alias gs='git status'
 alias gd='git diff'
 alias gco='git checkout'
+alias ls='exa'
+alias ll='exa -lah --git'
 export NVM_DIR="$HOME/.nvm"
 nvm() {
   unset -f nvm
