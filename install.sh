@@ -15,7 +15,5 @@ link() {
 link tmux.conf .tmux.conf
 link zshrc .zshrc
 link gitconfig .gitconfig
-link yabairc .config/yabai/yabairc
-link skhdrc .config/skhd/skhdrc
 link starship.toml .config/starship.toml
 link bin/tmux-sessionizer bin/tmux-sessionizer
