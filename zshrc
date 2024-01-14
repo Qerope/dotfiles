@@ -10,20 +10,7 @@ alias gd='git diff'
 alias gco='git checkout'
 alias ls='eza'
 alias ll='eza -lah --git'
-export NVM_DIR="$HOME/.nvm"
-nvm() {
-  unset -f nvm
-  . "$NVM_DIR/nvm.sh"
-  nvm "$@"
-}
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-pyenv() {
-  unset -f pyenv
-  eval "$(command pyenv init -)"
-  pyenv "$@"
-}
 HISTSIZE=50000
 SAVEHIST=50000
 setopt SHARE_HISTORY HIST_IGNORE_DUPS
@@ -31,3 +18,4 @@ source <(kubectl completion zsh)
 eval "$(/opt/homebrew/bin/brew shellenv)"
 eval "$(zoxide init zsh)"
 eval "$(atuin init zsh)"
+eval "$(mise activate zsh)"
