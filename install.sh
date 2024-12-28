@@ -17,3 +17,4 @@ link zshrc .zshrc
 link gitconfig .gitconfig
 link starship.toml .config/starship.toml
 link bin/tmux-sessionizer bin/tmux-sessionizer
+link ghostty .config/ghostty/config
