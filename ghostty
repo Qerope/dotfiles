@@ -1,1 +1,5 @@
 font-size = 14
+font-family = JetBrains Mono
+theme = catppuccin-mocha
+window-padding-x = 8
+window-padding-y = 6
