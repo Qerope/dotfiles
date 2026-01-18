@@ -1,7 +1,6 @@
 export PATH="$HOME/bin:/usr/local/bin:$PATH"
-source ~/.zplugin/bin/zplugin.zsh
-zplugin light zsh-users/zsh-autosuggestions
-zplugin light zdharma/fast-syntax-highlighting
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zsh/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 autoload -Uz compinit && compinit
 eval "$(starship init zsh)"
 alias ll='ls -lah'
